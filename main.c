@@ -1,6 +1,13 @@
-#include <stdio.h>
 
+#include <SDL2/SDL.h>
+#include "global.h"
+
+#include "main-function.h"
+#include "event.h"
 int main() {
-    printf("Hello, World!\n");
+    CreatePlayWindow();
+    CreateMyPlane();
+    event();
+    Destroy();
     return 0;
 }
